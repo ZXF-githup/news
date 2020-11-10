@@ -1,0 +1,38 @@
+<!--pages/home/home.wxml-->
+
+<!-- 头部，切换种类 -->
+<view class="top">
+  <view class="tabcontent">
+    <block wx:for="{{tabs}}" wx:key="*this">
+      <view id="{{index}}" data-name="{{item}}" 
+      class="tabcell {{ activeIndex==index?'active':'' }}" 
+      bindtap="tabClick">
+        {{item}}
+      </view>
+    </block>
+  </view>
+
+  <icon type="search" bindtap="search"></icon>
+</view>
+<!-- 新闻列表 -->
+<view>
+  <block wx:for='{{news}}' wx:key='id'>
+    <view class='newsitem' bindtap="Goinfo" data-id="{{item._id}}">
+      <view  class="imgbox">
+       <image src='{{item.img}}' mode="widthFix"></image> 
+      </view>
+      <view class='news-text'>
+        <text class='title'>{{item.title}}</text>
+        <view class='bottext'>
+          <text class='source'>{{item.source}}</text>
+          <text class='date'>{{item.time}}</text>
+        </view>
+      </view>
+    </view> 
+  </block>
+</view>
+
+
+
+
+

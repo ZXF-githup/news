@@ -1,0 +1,42 @@
+{
+    "pages":["pages/demo1/demo1", 
+    "pages/collect/collect",
+    "pages/info/info",
+    "pages/home/home",
+    "pages/search/search",
+    "pages/reg/reg",
+    
+    "pages/index/index",
+    "pages/logs/logs" 
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#dd3635",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":true,
+    "backgroundColor":"#6400ff"
+  },
+  "tabBar": {
+    "list":[
+      {
+        "pagePath":"pages/home/home",
+        "text":"首页",
+        "iconPath":"/pages/imgs/wechat.png",
+        "selectedIconPath":"/pages/imgs/wechatHL.png"
+      },
+      {
+        "pagePath":"pages/collect/collect",
+        "text":"我的",
+        "iconPath":"/pages/imgs/icon_cloud.png",
+        "selectedIconPath":"/pages/imgs/icon_cloud_HL.png"
+      }
+    ]
+    
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+  
+}
+
+  
+

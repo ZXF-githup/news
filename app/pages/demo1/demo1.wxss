@@ -1,0 +1,21 @@
+/* pages/demo1/demo1.wxss */
+
+.input{
+  border:1px solid #dd3635;
+  width:95%;
+  height:35px;
+  box-sizing: border-box;
+  padding-left:15px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+.submit{
+  /* border:0; */
+  background-color: #dd3635;
+  color:#ffffff;
+  line-height: 35px;
+}
+.reg{
+  color:#7664bb;
+  border-bottom:1px solid #7664bb;
+}

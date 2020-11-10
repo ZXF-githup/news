@@ -1,0 +1,21 @@
+<!--pages/reg/reg.wxml-->
+<view class="container">
+  <input class="input" type="text" placeholder="用户名"
+  bindinput="binduser"data-obj="username" value="{{username}}"/>
+  <input class="input" type="password" placeholder="登录密码"
+  bindinput="bindpw1" data-obj="pw1" value="{{pw1}}"/>
+  <input class="input" type="password" placeholder="确认密码"
+  bindinput="bindpw2" data-obj="pw2" value="{{pw2}}"/>
+  <button class="submit" bindtap="reg">注册</button>
+
+  <view>
+    <view bindtap="choose" class="add">点击添加头像</view>
+    <image class="img" src="{{img.path}}"></image>
+  </view>
+  
+  <navigator url="/pages/demo1/demo1">
+    <view class="reg">登录</view>
+  </navigator>
+</view>
+
+

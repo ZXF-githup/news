@@ -1,0 +1,16 @@
+
+<view class="container">
+  <input class="input" type="text" placeholder="用户名" 
+   bindinput="binduser" 
+  data-obj="username" value="{{username}}"/>
+  
+  <input class="input" type="password" placeholder="登录密码" 
+   bindinput="bindpw" 
+  data-obj="pw" value="{{pw}}"/>
+
+  <button class="input submit" bindtap="login">登录</button>
+  
+  <navigator url="/pages/reg/reg">
+    <view class="reg">注册</view>
+  </navigator>
+</view>

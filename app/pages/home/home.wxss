@@ -1,0 +1,96 @@
+.top{
+  display: flex;
+  align-items: center;
+  background-color: #dd3635;
+  border-top: 1px solid #f2f5fa;
+}
+
+.tabcontent {
+  color:#fff;
+  width: 100%;
+  display: flex;
+  border-top: 1px solid #f2f5fa;
+  border-bottom: 1px solid #f2f5fa;
+  
+}
+ 
+.tabcell {
+  width: 50%;
+  line-height: 44px;
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+}
+ 
+.active {
+  font-weight: bold;
+  font-size: 19px;
+}
+ 
+.active::after {
+  content: '';
+  width: 80px;
+  position: absolute;
+  height: 4px;
+  background: #2e7bfd;
+  left: 50%;
+  margin-left: -40px;
+  bottom: 0px;
+}
+
+.kind{
+  height:42px;
+  line-height: 42px;
+  color:#fff;
+  font-size: 16px;
+  background-color: #dd3635;
+  border-top:1px solid #888888; 
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.kind view{
+  width:25% 
+}
+.cur{
+  font-size:19px;
+}
+.newsitem{
+  width: 100%; 
+  height: 280rpx; 
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;    
+  margin-top: 5rpx;
+  padding:5px;
+  border-bottom: 1rpx solid rebeccapurple
+}
+.imgbox{ 
+  width: 280rpx; 
+  height: 100%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+} 
+/* .imgbox image{width:100%} */
+
+.news-text{ 
+  display: flex; 
+  flex-direction: column; 
+  flex:1;
+  padding:0 8px
+} 
+.bottext{ 
+  width: 100%; 
+  height: 90rpx; 
+  display: flex; 
+  align-items: flex-end; 
+  font-size: 30rpx;    
+}
+.title{
+  font-weight: bold;
+}
+.source{ 
+  margin-right: 30rpx; 
+}
+

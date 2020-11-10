@@ -1,0 +1,25 @@
+<!--pages/search/search.wxml-->
+<view class="top">
+  <input class="search" type="text" 
+  bindinput="inputedit" data-obj="keys" value="{{keys}}"/>
+  <icon class="searchcion" size='20' type='search'
+  bindtap="lookfor"></icon>
+</view>
+
+<view>
+  <block wx:for='{{news}}' wx:key='id'>
+    <view class='newsitem' bindtap="Goinfo" data-id="{{item._id}}">
+      <view  class="imgbox">
+       <image src='{{item.img}}' mode="widthFix"></image> 
+      </view>
+      <view class='news-text'>
+        <text class='title'>{{item.title}}</text>
+        <view class='bottext'>
+          <text class='source'>{{item.source}}</text>
+          <text class='date'>{{item.time}}</text>
+        </view>
+      </view>
+    </view> 
+  </block>
+</view>
+

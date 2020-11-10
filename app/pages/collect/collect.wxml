@@ -1,0 +1,35 @@
+<!--pages/collect/collect.wxml-->
+<view class="head">
+  <image src="../imgs/2.png" mode="widthFix" class="img"></image>
+  <view>{{user.username}}</view>
+</view>
+<view class="collect" bindtap="mycollect">
+  我的收藏
+  <text wx:if="{{flag}}">(共{{collection.length}}条)</text>
+
+  <!-- 新闻列表 -->
+  <view>
+    <block wx:for='{{collection}}' wx:key='id'>
+      <view class='newsitem' bindtap="Goinfo" data-id="{{item._id}}">
+        <view  class="imgbox">
+        <image src='{{item.news.img}}' mode="widthFix"></image> 
+        </view>
+        <view class='news-text'>
+          <text class='title'>{{item.news.title}}</text>
+          <view class='bottext'>
+            <text class='source'>{{item.news.source}}</text>
+            <text class='date'>{{item.news.time}}</text>
+          </view>
+        </view>
+      </view> 
+    </block>
+  </view>
+
+
+
+  <button class="quit" bindtap="quit">退出</button>
+</view>
+
+
+
+

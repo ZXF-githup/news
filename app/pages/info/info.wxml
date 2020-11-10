@@ -1,0 +1,16 @@
+<view>
+  <view class="title">{{newsinfo.title}}</view>
+  <view class="source">
+    <text>{{newsinfo.source}}</text>
+    <text>{{newsinfo.time}}</text>
+  </view>
+  <view class="content">
+    <rich-text nodes="{{newsinfo.context}}"></rich-text>
+  </view>
+  <view class="bot"></view>
+  <view class="like" bindtap="collect">
+    <block>
+      {{collectmsg}}
+    </block>
+  </view>
+</view>
